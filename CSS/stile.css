@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0 0px; /* Aggiungi padding ai lati per evitare che gli elementi escono dalla pagina */
+    box-sizing: border-box; /* Include il padding nel calcolo della larghezza */
+    display: flex; /* Utilizza flexbox per il contenitore principale */
+    flex-direction: column; /* Allinea gli elementi verticalmente */
+    height: 100vh; /* Imposta l'altezza del corpo al 100% della viewport */
+    font-family: 'Inter', sans-serif;
+    }
+
+nav {
+    background-color: black;
+    padding: 10px 20px; /* Aggiunge spazio intorno al testo */
+    color: white; /* Colore del testo */
+    margin: 0; /* Rimuove i margini */
+}
+
+
+nav ul {
+    list-style-type: none; /* Rimuove i punti dalla lista */
+    margin: 0; /* Rimuove i margini */
+    padding: 0;
+    display: flex; /* Rende gli elementi della lista disposti in linea */
+    justify-content: space-between; /* Allinea gli elementi a sinistra e a destra */
+}
+
+
+nav li {
+    margin-right: 20px; /* Spazio tra gli elementi della lista */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Rimuove lo spazio del margine per l'ultimo elemento */
+}
+
+nav li a {
+    color: white; /* Imposta il colore del testo dei link */
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+}
+
+
+.hero {
+    background-image: url('img/img1.jpg'); /* Aggiungi l'immagine di sfondo */
+    background-size: cover; /* Fai in modo che l'immagine copra l'intera area */
+    background-position: center; /* Centra l'immagine */
+    height: 500px; /* Altezza dell'area hero */
+    display: flex; /* Utilizza flexbox per centrare l'immagine */
+    justify-content: center; /* Centra l'immagine orizzontalmente */
+    align-items: center; /* Centra l'immagine verticalmente */
+    color: white; /* Colore del testo sull'immagine */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+.hero img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Assicurati che l'immagine non sia nascosta */
+    visibility: visible;
+    /* Assicurati che l'immagine non sia posizionata fuori dal suo contenitore */
+    position: relative;
+}
+
+.section.uno {
+    background-color: black; /* Imposta lo sfondo nero */
+    color: white; /* Imposta il testo bianco */
+}
+
+.section.uno > div {
+    padding: 20px; /* Aggiunge spazio interno */
+    max-width: 800px; /* Larghezza massima del contenuto */
+    margin: 0 auto; /* Centra il contenuto orizzontalmente */
+}
+.artisti {
+    display: table;
+    width: 100%; /* Assicura che la tabella occupi l'intera larghezza */
+    table-layout: fixed; /* Fissa la larghezza delle colonne */
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+}
+
+.artisti > div {
+    display: table-cell; /* Imposta gli elementi come celle della tabella */
+    text-align: center; /* Centra il testo */
+    padding: 20px; /* Aggiunge spazio intorno ai contenuti */
+}
+
+.artisti > div:hover h2 {
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo nero con bassa opacità */
+    padding: 10px; /* Aggiunge spazio intorno al testo */
+    border-radius: 5px; /* Bordo arrotondato */
+}
+
+.artisti > div:hover h2 a {
+    color: white; /* Colore del testo bianco al passaggio del mouse */
+}
+
+.artisti > div img {
+    max-width: 100%; /* Assicura che le immagini non superino la larghezza della cella */
+    display: block; /* Impedisce la visualizzazione come elemento inline */
+    margin: 0 auto; /* Centra l'immagine orizzontalmente nella cella */
+}
+
+
